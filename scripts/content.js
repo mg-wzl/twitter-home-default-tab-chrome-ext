@@ -9,7 +9,7 @@ const getElement = (xpath) => {
 };
 
 function waitForElement(xpath) {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     const element = getElement(xpath);
     if (element) {
       return resolve(element);
@@ -27,6 +27,14 @@ function waitForElement(xpath) {
       childList: true,
       subtree: true,
     });
+
+    setTimeout(() => {
+      observer.disconnect();
+      console.log(
+        "wzl: Could not find specified tab"
+      );
+      reject();
+    }, 10000);
   });
 }
 
