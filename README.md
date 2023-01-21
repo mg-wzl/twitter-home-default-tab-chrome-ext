@@ -1,6 +1,8 @@
 # twitter-home-default-tab-chrome-ext
 ## Twitter Home extension - Change Default Tab
 
+*Warning! For non-English language you need to [manually change the text of the desired tab](#options)*
+
 This extension lets you choose default tab on Twitter home page (and prevent annoying "For You" tab from being open by default). 
 You can set the text of the preferred tab in the extension options (defaults to "Following")
 
