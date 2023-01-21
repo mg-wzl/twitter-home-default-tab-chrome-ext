@@ -3,6 +3,9 @@
   "name": "Twitter Home - Change Default Tab",
   "description": "Lets you choose default tab on Twitter home page. You can set the text of the preferred tab in extension options (defaults to \"Following\")",
   "version": "0.1",
+  "icons": {
+    "128": "icon-128.png"
+  },
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
